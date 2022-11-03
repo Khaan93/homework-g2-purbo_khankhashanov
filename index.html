@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Пурбо</title>
+    <style>
+        html {
+            background-color: lightsteelblue;
+        }
+
+        body {
+            width: 100%;
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h1 {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            font-style: oblique;
+            color: dimgray;
+        }
+
+        .photo {
+            display: block;
+            margin: auto;
+            opacity: 0.5;
+            border-radius: 30px;
+            transition: 1s;
+            box-shadow: 20px 20px 50px #7b7a7a;
+        }
+
+        .photo:hover {
+            transform: scale(2);
+            opacity: 1;
+        }
+
+        .photo2 {
+            display: block;
+            margin: auto;
+            opacity: 0.5;
+            border-radius: 30px;
+            transition: 1s;
+            box-shadow: 20px 20px 50px #7b7a7a;
+        }
+
+        .photo2:hover {
+            transform: scale(3);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Обучение по Web-разработке</h1>
+    <h2>Содержание</h2>
+    <ol>
+        <li><a href="#first">Урок 1. Знакомство</a></li>
+        <li><a href="#second">Урок 2. Как работает Интернет и сайты</a></li>
+        <li><a href="#third">Урок 3. Основы HTML</a></li>
+        <li><a href="#fourth">Урок 4. Введение в CSS</a></li>
+        <li><a name="fifth">Урок 5. Позиционирование в CSS</a></li>
+        <li>Урок 6. Отзывчивый дизайн. Адаптивная верстка</li>
+    </ol>
+    <h2><a name="first">⭐Урок 1. Знакомство</a></h2>
+    <p>Первый урок доступен по ссылке:</p>
+    <a href="https://rabdanov.notion.site/1-8241626ee31145d09bae9af7990a78e8" target="_blank">Первый урок</a>
+    <h3>Домашнее задание</h3>
+    <ol>
+        <li>Чем вы занимаетесь и как сюда пришли?</li>
+        <li>Зачем вы пришли учиться и чего хотите достичь к концу обучения?</li>
+        <li>Приложите свою фотографию на фоне своего рабочего места</li>
+    </ol>
+    <h3>Задание</h2>
+        <p>Меня зовут Пурбо. Работать и зарабатывать удаленно всегда был для меня привлекательным вариантом для
+            организации своей жизни, и я начал засматриваться в сторону IT направления. И тут появилась возможность
+            записаться на курсы и обучаться под крылом наставника. Я загорелся такой возможностью, и не задумываясь
+            ухватился за нее.<br>
+            Цель моего обучения - приобрести навыки, стать профессионалом своего дела, ну и конечно, сделать мир лучше🙂
+        </p>
+        <p style="text-align:center;">Фото моего рабочего места:</p>
+
+        <img class="photo"
+            src="https://sun9-east.userapi.com/sun9-43/s/v1/ig2/iTE6kI6IUcyZlf58DYWHd_qiHb21mhhWgX3yKZR99bg1NANfjU2CDPkuV_BzjbenTtaFZz9L_GspybGWfVq0fYJJ.jpg?size=1280x960&quality=95&type=album"
+            width="300px" alt=" Фото моего рабочего стола">
+        <h2><a name="second">⭐Урок 2. Как работает Интернет и сайты</a></h2>
+        <p>Второй урок доступен по ссылке:</p>
+        <a href="https://rabdanov.notion.site/2-cd42a0127c97482b8aa4127063b1f8e1" target="_blank">Второй урок</a>
+        <h3>Домашнее задание</h3>
+        <ol>
+            <li>Зайти на сайт <a href="https://2ip.ru/dig/" target="_blank">https://2ip.ru/dig/</a> и найти адреса
+                <strong>NS</strong>
+                вашего любимого или любого сайта. Их может быть несколько. Это нужно на случай если один из серверов
+                перестал работать или отключился от Интернета
+            </li>
+            <li>Найдите адрес веб-сервера этого же сайта. Адрес веб-сервера указывается записью <strong>A.</strong>
+                Также выпишите его.</li>
+            <li>Найдите в интернете как открыть инструменты разработчика в вашем браузере, откройте их для сайта, для
+                которого вы смотрели NS и A записи и зайдите во вкладку сеть. Обновите страницу и найдите в списке
+                активности сети основной запрос вашего браузера к веб-серверу. Обычно он бывает подписан просто адресом
+                сайта и типом document . Изучите этот запрос и найдите адрес веб-сервера. Сделайте скриншот и отметьте
+                адрес веб сервера.</li>
+        </ol>
+        <h3>Задания</h3>
+        <p>Сайт - wildberries.ru</p>
+        <ol>
+            <li><strong>Адреса NS</strong>
+                <p>ns1.wildberries.ru. 629 IN A 194.1.214.8</p>
+                <p>ns2.wildberries.ru. 629 IN A 91.230.107.70</p>
+                <p>ns3.wildberries.ru. 629 IN A 62.109.12.21</p>
+            </li>
+            <li><strong>Веб адреса</strong>
+                <p>wildberries.ru. 665 IN A 185.138.253.1</p>
+                <p> wildberries.ru. 665 IN A 185.138.254.1</p>
+                <p>wildberries.ru. 665 IN A 185.138.252.1</p>
+            </li>
+            <li><strong>Cкрин третьего задания</strong>
+                <p style="text-align:center;">Адрес веб сервиса сайта wildberries.ru</p>
+                <p><img class="photo2"
+                        src=https://sun9-east.userapi.com/sun9-76/s/v1/ig2/nZCVdszwgWrUdZEMVvYBf7ghuKK4CAv4bvtSq_P-xEyaUPYNKXdtz-5gCFePxCu7eobbGR8WFltjv2X2rNNJyYn-.jpg?size=1280x720&quality=95&type=album
+                        width="300" alt="Скрин 3-го задания"></p>
+            </li>
+        </ol>
+        <h2><a name="third">⭐Урок 3. Основы HTML</a></h2>
+        <p>Третий урок доступен по ссылке:</p>
+        <a href="https://rabdanov.notion.site/3-HTML-ebe60a2244c04698bc1e3d65aa84336f" target="_blank">Третий урок</a>
+        <h3>Домашнее задание</h3>
+        <ol>
+            <li>Найдите список всех элементов и прочитайте их описание</li>
+            <li>Отредактируйте файл Index.html таким образом, чтобы названием страницы было ваше Имя</li>
+            <li>Персонализируйте контент внутри `Index.html` :
+                <p>- Озаглавьте страницу своим именем</p>
+                <p>- Расскажите о себе</p>
+                <p>- Составьте **список** из пяти запомнившихся вам html элементов</p>
+                <p>- ⭐ Добавьте картинку (Я буду сильно удивлен, если кто-то сделать этот пункт)</p>
+            </li>
+        </ol>
+        <h3>Задания</h3>
+        <ol>
+            <li><a href="https://html5book.ru/html-tags/" target="_blank">Список HTML элементов и их значение</a></li>
+            <li><a href="https://khaan93.github.io/homework-g2-purbo_khankhashanov/Purbo" target="_blank">Мой
+                    сайт</a></li>
+        </ol>
+        <h4>Какие html элементы мне запомнились</h4>
+        <ol>
+            <li>a - создание гипперсылок</li>
+            <li>html - корневой элемент HTML-документа</li>
+            <li>img - встраивает изображения в HTML-документ с помощью атрибута src, значением которого является адрес
+                встраиваемого изображения</li>
+            <li>ol - упорядоченный нумерованный список. Нумерация может быть числовая или алфавитная.</li>
+            <li>p - параграф в тексте</li>
+        </ol>
+        <h2><a name="fourth">⭐Урок 4. Введение в CSS</a></h2>
+        <p>Четвертый урок доступен по ссылке:</p>
+        <a href=" https://www.notion.so/4-CSS-b7e0c1cdd7f04c0080f3f710bca2aad0" target="_blank">Четвертый урок</a>
+        <h3>Домашнее задание</h3>
+        <p>Для этого задания запишите список использованных статей. Поиск информации один из самых важных
+            скиллов
+            программиста!</p>
+        <ol>
+            <li>Найдите список css свойств и прочитайте их описания. Можете пока пропускать свойства, отвечающие
+                за
+                положение элементов</li>
+            <li>На вашем сайте создайте элемент <strong>style</strong></li>
+            <li>Создайте список запомнившихся вам css свойств</li>
+            <li>Примените к каждому из элементов списка эти свойства</li>
+            <li>Почитайте про единицы измерения цветов. Какими способами можно обозначить цвет? запишите ответ
+                списком
+                на вашем сайте</li>
+            <li>Почитайте про комбинацию селекторов и специфичность. Оформите конспект по этим темам в отдельном
+                html
+                файле</li>
+        </ol>
+        <h3>Задания</h3>
+        <ol>
+            <li><a href="https://html5book.ru/css-spravochnik.html" target="_blank">CSS справочник. Свойства по
+                    алфавиту</a><br>
+                <a href="http://htmlbook.ru/css" target="_blank">Справочник CSS</a>
+            </li>
+            <li><a href="https://khaan93.github.io/homework-g2-purbo_khankhashanov/Purbo">На
+                    моем сайте</a></li>
+            <li>Какие CSS свойства мне запомнились
+                <ul>
+                    <li style="color:rgb(240, 14, 127)">color</li>
+                    <li style="font-style:oblique">font-style</li>
+                    <li style="font-weight:bolder">font-weight</li>
+                    <li style="font-family:Verdana, Geneva, Tahoma, sans-serif">font-family</li>
+                    <li style="background-color:darkgoldenrod">background-color</li>
+                    <li
+                        style="background-image:url(data:image/jpeg;base64,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)">
+                        background-image</li>
+                </ul>
+            </li>
+            <li>В задании 3</li>
+            <li><strong style="color:darkgreen">Единицы</strong><strong style="color:blue">
+                    измерения</strong><strong style="color:red"> цветов</strong>
+                <p><i><strong>Какими способами можно обозначить цвет?</strong></i><br>
+                    Все способы задания цветов CSS базируются на одном принципе: в файле
+                    стилей для селектора указывается свойство color и его значение. А вот сами значения могут
+                    задаваться
+                    в различном формате.</p>
+                <ul>
+                    <li>Задать цвет CSS через шестнадцатиричный формат</li>
+                    <li>Задать цвет CSS через RGB</li>
+                    <li>Определение цветов CSS через классические названия</li>
+                    <li>Способ в CSS задать цвет с помощью HSL</li>
+                    <li>Задать цвет в CSS с прозрачностью</li>
+                </ul>
+            </li>
+            <li><a href="Селекторы CSS. Виды, группировка и специфичность.html" target="_blank">Конспект
+                    про комбинацию селекторов и специфичность</a></li>
+        </ol>
+</body>
+
+</html>
