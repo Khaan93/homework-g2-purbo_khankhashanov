@@ -6,30 +6,34 @@
     <title>Пурбо</title>
     <style>
         html {
-            background-color: rgb(248, 229, 255);
+            background: linear-gradient(45deg, #2f0233 33%, #6f327b 66%, #2d0333);
         }
 
         body {
             width: 100%;
-            max-width: 1000px;
+            max-width: 1150px;
             margin: 30px auto;
-            background-color: rgb(246, 239, 255);
+            background-color: rgb(253, 238, 255);
             padding: 30px;
-            font-size: 16px;
+            font-size: 17px;
             font-family: sans-serif;
             border-radius: 30px;
-            box-shadow: 20px 20px 50px #a896b8;
+            box-shadow: 0px 0px 80px #a896b8;
         }
 
         h1 {
             background-color: white(0, 179, 80);
-            color: ;
             border: 2px solid black;
             margin: 20px;
             padding: 20px;
             text-align: center;
             border-radius: 30px;
-            box-shadow: 10px 10px 10px #a896b8;
+            box-shadow: 0px 0px 15px #a896b8;
+        }
+
+        h1:hover {
+            opacity: 0.5;
+            cursor: pointer;
         }
 
         .gradient-text {
@@ -42,17 +46,33 @@
             margin: 20px auto;
         }
 
-        h1:hover {
-            opacity: 0.5;
+
+        h2 {
+            color: #2f0634;
         }
 
         h2:hover {
             opacity: 0.7;
+            cursor: pointer;
         }
 
         h3 {
             font-style: initial;
             color: dimgray;
+        }
+
+        a {
+            color: #045a04;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #054c0e;
+        }
+
+        a:hover {
+            color: #800000;
+            text-decoration: underline;
         }
 
         .photo {
@@ -61,31 +81,44 @@
             opacity: 0.5;
             border-radius: 30px;
             transition: 1s;
-            box-shadow: 20px 20px 50px #7b7a7a;
+            box-shadow: 0px 0px 50px #7b7a7a;
         }
 
         .first:hover {
             transform: scale(2);
             opacity: 1;
+            cursor: pointer;
         }
 
         .second:hover {
             transform: scale(3);
             opacity: 1;
+            cursor: pointer;
         }
 
-        a {
-            color: #008000;
+        .back-to-top {
+            position: fixed;
+            bottom: 5%;
+            right: 3%;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(130deg, #5e0c59 50%, #933c93 50%);
+            -webkit-background-size: 300%;
+            background-size: 300%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-decoration: none;
+            font-size: 50px;
+            border-radius: 5px;
+            transition: .5s;
+            color: #ce02bd;
         }
 
-        a:visited {
-            color: #800080;
-        }
-
-        a:hover {
-            color: #800000;
-            text-decoration: underline;
+        .back-to-top:hover {
+            background-position: 100% 0;
+            color: #ce02bd;
+            text-decoration: none;
         }
 
         .block {
@@ -172,6 +205,7 @@
 
 <body>
     <h1 class="gradient-text">Обучение по Web-разработке</h1>
+    <a href="#" class="back-to-top">▲</i></a>
     <h2>Содержание</h2>
     <ol>
         <li><a href="#first">Урок 1. Знакомство</a></li>
@@ -181,7 +215,7 @@
         <li><a href="#fifth">Урок 5. Позиционирование в CSS</a></li>
         <li><a href="#sixth">Урок 6. Отзывчивый дизайн. Адаптивная верстка</a></li>
     </ol>
-    <h2 id="first">⭐Урок 1. Знакомство</h2>
+    <h2 id="first">♟️Урок 1. Знакомство</h2>
     <p>Первый урок доступен по ссылке:</p>
     <a href="https://rabdanov.notion.site/1-8241626ee31145d09bae9af7990a78e8" target="_blank">Первый урок</a>
     <h3>Домашнее задание</h3>
@@ -202,7 +236,7 @@
         <img class="first photo"
             src="https://sun9-east.userapi.com/sun9-43/s/v1/ig2/iTE6kI6IUcyZlf58DYWHd_qiHb21mhhWgX3yKZR99bg1NANfjU2CDPkuV_BzjbenTtaFZz9L_GspybGWfVq0fYJJ.jpg?size=1280x960&quality=95&type=album"
             width="300px" alt=" Фото моего рабочего стола">
-        <h2 id="second">⭐Урок 2. Как работает Интернет и сайты</h2>
+        <h2 id="second">♟️Урок 2. Как работает Интернет и сайты</h2>
         <p>Второй урок доступен по ссылке:</p>
         <a href="https://rabdanov.notion.site/2-cd42a0127c97482b8aa4127063b1f8e1" target="_blank">Второй урок</a>
         <h3>Домашнее задание</h3>
@@ -240,7 +274,7 @@
                         width="300" alt="Скрин 3-го задания"></p>
             </li>
         </ol>
-        <h2 id="third">⭐Урок 3. Основы HTML</h2>
+        <h2 id="third">♟️Урок 3. Основы HTML</h2>
         <p>Третий урок доступен по ссылке:</p>
         <a href="https://rabdanov.notion.site/3-HTML-ebe60a2244c04698bc1e3d65aa84336f" target="_blank">Третий урок</a>
         <h3>Домашнее задание</h3>
@@ -268,8 +302,8 @@
                 встраиваемого изображения</li>
             <li>ol - упорядоченный нумерованный список. Нумерация может быть числовая или алфавитная.</li>
             <li>p - параграф в тексте</li>
-        </ol>
-        <h2 id="fourth">⭐Урок 4. Введение в CSS</h2>
+        </ol><br>
+        <h2 id="fourth">♟️Урок 4. Введение в CSS</h2>
         <p>Четвертый урок доступен по ссылке:</p>
         <a href=" https://www.notion.so/4-CSS-b7e0c1cdd7f04c0080f3f710bca2aad0" target="_blank">Четвертый урок</a>
         <h3>Домашнее задание</h3>
@@ -329,7 +363,7 @@
             <li><a href="Селекторы CSS. Виды, группировка и специфичность.html" target="_blank">Конспект
                     про комбинацию селекторов и специфичность</a></li>
         </ol>
-        <h2 id="fifth">⭐Урок 5. Позиционирование в CSS</h2>
+        <h2 id="fifth">♟️Урок 5. Позиционирование в CSS</h2>
         <p>Пятый урок доступен по ссылке:</p>
         <a href="https://rabdanov.notion.site/5-CSS-2a2027b9bace4cac94c53623b57f9ffb" target="_blank">Пятый урок</a>
         <h3>Домашнее задание</h3>
