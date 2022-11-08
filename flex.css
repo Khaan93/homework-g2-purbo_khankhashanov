@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item2 {
+    padding: 40px;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 40%;
+    height: fit-content;
+    width: fit-content;
+}
+
+.item2:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.item-1 {
+    order: 3;
+    background-color: aqua;
+}
+
+.item-2 {
+    order: 2;
+    background-color: coral;
+}
+
+.item-3 {
+    order: 1;
+    background-color: chartreuse;
+}
+
+.item-4 {
+    order: 3;
+    background-color: fuchsia;
+}
+
+.item-5 {
+    order: 2;
+    background-color: gold;
+}
+
+.item-6 {
+    order: 1;
+    background-color: pink;
+}
+
+.item-7 {
+    order: 3;
+    background-color: indianred;
+}
+
+.item-8 {
+    order: 2;
+    background-color: dimgray;
+}
+
+.item-9 {
+    order: 1;
+    background-color: lightskyblue;
+}
