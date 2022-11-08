@@ -7,33 +7,69 @@
     <link rel="stylesheet" href="flex.css">
     <style>
         html {
-            <<<<<<< HEAD background-color: lightsteelblue;
-            =======background: linear-gradient(45deg, #2f0233 33%, #6f327b 66%, #29032e);
-            >>>>>>>5-lesson
+            background: linear-gradient(45deg, #2f0233 33%, #6f327b 66%, #29032e);
         }
 
         body {
             width: 100%;
-            max-width: 1000px;
+            max-width: 1150px;
             margin: 30px auto;
-            background-color: white;
+            background-color: rgb(253, 238, 255);
             padding: 30px;
-            font-size: 16px;
-            font-family: 'Open Sans', sans-serif;
+            font-size: 17px;
+            font-family: sans-serif;
+            border-radius: 30px;
+            box-shadow: 0px 0px 80px #a896b8;
         }
 
         h1 {
-            background-color: white;
-            color: black;
+            background-color: white(0, 179, 80);
             border: 2px solid black;
             margin: 20px;
             padding: 20px;
             text-align: center;
+            border-radius: 30px;
+            box-shadow: 0px 0px 15px #a896b8;
+        }
+
+        h1:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        .gradient-text {
+            font-family: sans-serif;
+            font-size: 35px;
+            background: linear-gradient(45deg, #35012f 33%, #6b0981 66%, #ce02bd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #52044d;
+            margin: 20px auto;
+        }
+
+
+        h2 {
+            color: #2f0634;
+        }
+
+        h2:hover {
+            opacity: 0.7;
+            cursor: pointer;
         }
 
         h3 {
-            font-style: oblique;
+            font-style: initial;
             color: dimgray;
+        }
+
+        a {
+            color: #045a04;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #800000;
+            text-decoration: underline;
         }
 
         .photo {
@@ -42,42 +78,141 @@
             opacity: 0.5;
             border-radius: 30px;
             transition: 1s;
-            box-shadow: 20px 20px 50px #7b7a7a;
+            box-shadow: 0px 0px 50px #7b7a7a;
         }
 
-        .photo:hover {
+        .first:hover {
             transform: scale(2);
             opacity: 1;
+            cursor: pointer;
         }
 
-        .photo2 {
-            display: block;
-            margin: auto;
-            opacity: 0.5;
-            border-radius: 30px;
-            transition: 1s;
-            box-shadow: 20px 20px 50px #7b7a7a;
-        }
-
-        .photo2:hover {
+        .second:hover {
             transform: scale(3);
             opacity: 1;
+            cursor: pointer;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 5%;
+            right: 3%;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(130deg, #5e0c59 50%, #933c93 50%);
+            -webkit-background-size: 300%;
+            background-size: 300%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 50px;
+            border-radius: 5px;
+            transition: .5s;
+            color: #8f1885;
+        }
+
+        .back-to-top:hover {
+            background-position: 100% 0;
+            color: #ce02bd;
+            text-decoration: none;
+        }
+
+        .block {
+            display: block;
+            color: darkslategrey;
+            margin: 10px;
+            padding: 10px;
+            width: max-content;
+        }
+
+        .inline {
+            display: inline-block;
+            color: darkgreen;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .purple {
+            background-color: #fb9bfb;
+            border: 2px solid black;
+        }
+
+        .blue {
+            background-color: aqua;
+            border: 2px solid red;
+        }
+
+        .gold {
+            background-color: gold;
+            border: 2px solid green;
+        }
+
+        .invisible {
+            display: none;
+        }
+
+        .flex-container {
+            display: flex;
+            font-size: 20px;
+            flex-wrap: wrap;
+            width: 160px;
+            border: 1px solid darkslateblue;
+        }
+
+        .item {
+            border: 1px solid rgb(113, 205, 74);
+            padding: 20px;
+        }
+
+        .item1 {
+            width: 130px;
+            height: 130px;
+            border: 2px solid darkslateblue;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .relative {
+            position: relative;
+            top: -20px;
+            left: 30px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        .textcols {
+            white-space: nowrap;
+        }
+
+        .textcols-item {
+            white-space: normal;
+            display: inline-block;
+            width: 48%;
+            vertical-align: top;
+            position: relative;
         }
     </style>
 </head>
 
 <body>
-    <h1>Обучение по Web-разработке</h1>
+    <h1 class="gradient-text" style="color: #8f1885">Обучение по Web-разработке</h1>
+    <a href="#" class="back-to-top">▲</i></a>
     <h2>Содержание</h2>
     <ol>
         <li><a href="#first">Урок 1. Знакомство</a></li>
         <li><a href="#second">Урок 2. Как работает Интернет и сайты</a></li>
         <li><a href="#third">Урок 3. Основы HTML</a></li>
         <li><a href="#fourth">Урок 4. Введение в CSS</a></li>
-        <li><a href="fifth">Урок 5. Позиционирование в CSS</a></li>
-        <li><a href="sixth">Урок 6. Отзывчивый дизайн. Адаптивная верстка</a></li>
+        <li><a href="#fifth">Урок 5. Позиционирование в CSS</a></li>
+        <li><a href="#sixth">Урок 6. Отзывчивый дизайн. Адаптивная верстка</a></li>
     </ol>
-    <h2><a name="first">⭐Урок 1. Знакомство</a></h2>
+    <h2 id="first">♟️Урок 1. Знакомство</h2>
     <p>Первый урок доступен по ссылке:</p>
     <a href="https://rabdanov.notion.site/1-8241626ee31145d09bae9af7990a78e8" target="_blank">Первый урок</a>
     <h3>Домашнее задание</h3>
@@ -95,10 +230,10 @@
         </p>
         <p style="text-align:center;">Фото моего рабочего места:</p>
 
-        <img class="photo"
+        <img class="first photo"
             src="https://sun9-east.userapi.com/sun9-43/s/v1/ig2/iTE6kI6IUcyZlf58DYWHd_qiHb21mhhWgX3yKZR99bg1NANfjU2CDPkuV_BzjbenTtaFZz9L_GspybGWfVq0fYJJ.jpg?size=1280x960&quality=95&type=album"
             width="300px" alt=" Фото моего рабочего стола">
-        <h2><a name="second">⭐Урок 2. Как работает Интернет и сайты</a></h2>
+        <h2 id="second">♟️Урок 2. Как работает Интернет и сайты</h2>
         <p>Второй урок доступен по ссылке:</p>
         <a href="https://rabdanov.notion.site/2-cd42a0127c97482b8aa4127063b1f8e1" target="_blank">Второй урок</a>
         <h3>Домашнее задание</h3>
@@ -131,12 +266,12 @@
             </li>
             <li><strong>Cкрин третьего задания</strong>
                 <p style="text-align:center;">Адрес веб сервиса сайта wildberries.ru</p>
-                <p><img class="photo2"
+                <p><img class="second photo"
                         src=https://sun9-east.userapi.com/sun9-76/s/v1/ig2/nZCVdszwgWrUdZEMVvYBf7ghuKK4CAv4bvtSq_P-xEyaUPYNKXdtz-5gCFePxCu7eobbGR8WFltjv2X2rNNJyYn-.jpg?size=1280x720&quality=95&type=album
                         width="300" alt="Скрин 3-го задания"></p>
             </li>
         </ol>
-        <h2><a name="third">⭐Урок 3. Основы HTML</a></h2>
+        <h2 id="third">♟️Урок 3. Основы HTML</h2>
         <p>Третий урок доступен по ссылке:</p>
         <a href="https://rabdanov.notion.site/3-HTML-ebe60a2244c04698bc1e3d65aa84336f" target="_blank">Третий урок</a>
         <h3>Домашнее задание</h3>
@@ -153,7 +288,7 @@
         <h3>Задания</h3>
         <ol>
             <li><a href="https://html5book.ru/html-tags/" target="_blank">Список HTML элементов и их значение</a></li>
-            <li><a href="https://khaan93.github.io/homework-g2-purbo_khankhashanov/Purbo" target="_blank">Мой
+            <li><a href="https://khaan93.github.io/homework-g2-purbo_khankhashanov/" target="_blank">Мой
                     сайт</a></li>
         </ol>
         <h4>Какие html элементы мне запомнились</h4>
@@ -164,8 +299,8 @@
                 встраиваемого изображения</li>
             <li>ol - упорядоченный нумерованный список. Нумерация может быть числовая или алфавитная.</li>
             <li>p - параграф в тексте</li>
-        </ol>
-        <h2><a name="fourth">⭐Урок 4. Введение в CSS</a></h2>
+        </ol><br>
+        <h2 id="fourth">♟️Урок 4. Введение в CSS</h2>
         <p>Четвертый урок доступен по ссылке:</p>
         <a href=" https://www.notion.so/4-CSS-b7e0c1cdd7f04c0080f3f710bca2aad0" target="_blank">Четвертый урок</a>
         <h3>Домашнее задание</h3>
@@ -192,7 +327,7 @@
                     алфавиту</a><br>
                 <a href="http://htmlbook.ru/css" target="_blank">Справочник CSS</a>
             </li>
-            <li><a href="https://khaan93.github.io/homework-g2-purbo_khankhashanov/Purbo">На
+            <li><a href="https://khaan93.github.io/homework-g2-purbo_khankhashanov/">На
                     моем сайте</a></li>
             <li>Какие CSS свойства мне запомнились
                 <ul>
@@ -224,6 +359,98 @@
             </li>
             <li><a href="Селекторы CSS. Виды, группировка и специфичность.html" target="_blank">Конспект
                     про комбинацию селекторов и специфичность</a></li>
+        </ol>
+        <h2 id="fifth">♟️Урок 5. Позиционирование в CSS</h2>
+        <p>Пятый урок доступен по ссылке:</p>
+        <a href="https://rabdanov.notion.site/5-CSS-2a2027b9bace4cac94c53623b57f9ffb" target="_blank">Пятый урок</a>
+        <h3>Домашнее задание</h3>
+        <ol>
+            <li>Примените все виды позиционирования.</li>
+            <li>Изучите подробнее технологию Flexbox и свойства, которые в ней используются. Сделайте Flex-контейнер с
+                направлением справа-налево.</li>
+            <li>Найдите информацию о том как изменить порядок перекрытия блоков друг другом и примените ее.</li>
+        </ol>
+        <h3>Задания</h3>
+        <ol>
+            <li>
+                <h4>✐CSS свойство <strong style=color:crimson;>display</strong></h4><br>
+                <i><strong style=color:red>- display: block<br>
+                        - display: inline-block</strong></i><br>
+                <div class="inline purple">Позиционирование</div>
+                <div class="inline blue">display:inline-block</div>
+                <div class="inline gold">последовательно слева-направо</div>
+                <div class="block blue">display:block</div>
+                <div class="block gold">это значение по умолчанию<br>
+                    последовательно вниз</div><br>
+                <i><strong style=color:red>- display:none</strong> Тут невидимый блок</i><br>
+                <div class="invisible">Я тут</div><br>
+                <i><strong style=color:red>- display:flex</strong></i><br>
+                <div class="flex-container">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                    <div class="item">6</div>
+                    <div class="item">7</div>
+                    <div class="item">8</div>
+                    <div class="item">9</div>
+                </div>
+                <h4>✐CSS свойство<strong style=color:crimson;> position</strong></h4><br>
+                <div class="textcols">
+                    <div class="textcols-item"><i><strong style=color:red>- position: static<br>
+                                - position: relative</strong></i><br>
+                        <div class="item1">
+                            <div style="color:red">position: static</div><br>
+                            (элемент по-умолчанию)
+                        </div>
+                        <div class="item1 relative">
+                            <div style="color:red">position: relative</div><br>
+                            относительное позиционирование
+                        </div>
+                        <div class="item1">
+                            <div style="color:red">position: static</div><br>
+                            (элемент по-умолчанию)
+                        </div>
+                    </div>
+                    <div class="textcols-item"><i><strong style=color:red>- position: absolute</strong></i><br>
+                        <div class="item1">
+                            <div style="color:red">position: static</div><br>
+                            (элемент по-умолчанию)
+                        </div>
+                        <div class="item1 absolute">
+                            <div style="color:red">position: absolute</div><br>
+                            абсолютное позиционирование
+                        </div>
+                        <div class="item1">
+                            <div style="color:red">position: static</div><br>
+                            (элемент по-умолчанию)
+                        </div>
+                    </div>
+                </div>
+                <h4><strong style=color:red;>- position: fixed</strong></h4>
+                Фиксированное позиционирование. Похоже на абсолютное, с тем отличием что элемент не будет сдвигаться
+                при прокрутке страницы. Он будет всегда привязан относительно краев окна браузера.
+            </li><br>
+            <li><strong>Flex-контейнер</strong><br>
+                <div class="container">
+                    <div class="item2 item-1">7</div>
+                    <div class="item2 item-2">8</div>
+                    <div class="item2 item-3">9</div>
+                </div>
+                <div class="container">
+                    <div class="item2 item-4">4</div>
+                    <div class="item2 item-5">5</div>
+                    <div class="item2 item-6">6</div>
+                </div>
+                <div class="container">
+                    <div class="item2 item-7">1</div>
+                    <div class="item2 item-8">2</div>
+                    <div class="item2 item-9">3</div>
+                </div>
+                </div>
+            </li>
+            <li></li>
         </ol>
 </body>
 
