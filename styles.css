@@ -1,42 +1,62 @@
 html {
-    background-color: white;
+    background: linear-gradient(45deg, #2f0233 33%, #6f327b 66%, #29032e);
 }
 
 body {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1150px;
     margin: 30px auto;
-    background-color: white;
+    background-color: rgb(253, 238, 255);
     padding: 30px;
-    font-size: 16px;
+    font-size: 17px;
     font-family: sans-serif;
+    border-radius: 30px;
+    box-shadow: 0px 0px 80px #a896b8;
 }
 
 h1 {
-    background-color: rgb(0, 179, 80);
-    color: black;
+    background-color: white(0, 179, 80);
     border: 2px solid black;
     margin: 20px;
     padding: 20px;
     text-align: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px #a896b8;
 }
 
 h1:hover {
-    background-color: #800080;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.gradient-text {
+    font-family: sans-serif;
+    font-size: 35px;
+    background: linear-gradient(45deg, #35012f 33%, #6b0981 66%, #ce02bd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #52044d;
+    margin: 20px auto;
+}
+
+
+h2 {
+    color: #2f0634;
+}
+
+h2:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 h3 {
-    font-style: oblique;
+    font-style: initial;
     color: dimgray;
 }
 
 a {
-    color: #008000;
+    color: #045a04;
     text-decoration: none;
-}
-
-a:visited {
-    color: #800080;
 }
 
 a:hover {
@@ -50,15 +70,178 @@ a:hover {
     opacity: 0.5;
     border-radius: 30px;
     transition: 1s;
-    box-shadow: 20px 20px 50px #7b7a7a;
+    box-shadow: 0px 0px 50px #7b7a7a;
 }
 
 .first:hover {
     transform: scale(2);
     opacity: 1;
+    cursor: pointer;
 }
 
 .second:hover {
     transform: scale(3);
     opacity: 1;
+    cursor: pointer;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(130deg, #5e0c59 50%, #933c93 50%);
+    -webkit-background-size: 300%;
+    background-size: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 5px;
+    transition: .5s;
+    color: #8f1885;
+}
+
+.back-to-top:hover {
+    background-position: 100% 0;
+    color: #ce02bd;
+    text-decoration: none;
+}
+
+.block {
+    display: block;
+    color: darkslategrey;
+    margin: 10px;
+    padding: 10px;
+    width: max-content;
+}
+
+.inline {
+    display: inline-block;
+    color: darkgreen;
+    margin: 10px;
+    padding: 10px;
+}
+
+.purple {
+    background-color: #fb9bfb;
+    border: 2px solid black;
+}
+
+.blue {
+    background-color: aqua;
+    border: 2px solid red;
+}
+
+.gold {
+    background-color: gold;
+    border: 2px solid green;
+}
+
+.invisible {
+    display: none;
+}
+
+.flex-container {
+    display: flex;
+    font-size: 20px;
+    flex-wrap: wrap;
+    width: 160px;
+    border: 1px solid darkslateblue;
+}
+
+.item {
+    border: 1px solid rgb(113, 205, 74);
+    padding: 20px;
+}
+
+.item1 {
+    width: 150px;
+    height: 150px;
+    border: 2px solid darkslateblue;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+    top: -20px;
+    left: 30px;
+}
+
+.absolute {
+    position: absolute;
+    top: 90px;
+    left: 80px;
+}
+
+.textcols {
+    white-space: nowrap;
+}
+
+.textcols-item {
+    white-space: normal;
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    position: relative;
+}
+
+.parent {
+    margin-left: 10%;
+    margin-top: 50px;
+    width: 50%;
+    background: #a896b8;
+    padding: 50px;
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.box {
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.block-1 {
+    background: #6f327b;
+    position: relative;
+    top: 40px;
+    z-index: 5;
+}
+
+.block-2 {
+    background: #a77df1;
+    position: relative;
+    z-index: 3;
+}
+
+.block-3 {
+    background: #8bc5d3;
+    position: absolute;
+    top: 180px;
+    right: 5px;
+    width: 40%;
+    z-index: 4;
+}
+
+.block-4 {
+    background: #4ee8a3;
+    position: relative;
+    z-index: 1;
+    bottom: 50px;
+}
+
+.block-5 {
+    background: #d06ea2;
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+    width: 40%;
+    z-index: 2;
 }

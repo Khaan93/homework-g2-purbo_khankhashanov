@@ -4,200 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Пурбо</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="flex.css">
-    <style>
-        html {
-            background: linear-gradient(45deg, #2f0233 33%, #6f327b 66%, #29032e);
-        }
-
-        body {
-            width: 100%;
-            max-width: 1150px;
-            margin: 30px auto;
-            background-color: rgb(253, 238, 255);
-            padding: 30px;
-            font-size: 17px;
-            font-family: sans-serif;
-            border-radius: 30px;
-            box-shadow: 0px 0px 80px #a896b8;
-        }
-
-        h1 {
-            background-color: white(0, 179, 80);
-            border: 2px solid black;
-            margin: 20px;
-            padding: 20px;
-            text-align: center;
-            border-radius: 30px;
-            box-shadow: 0px 0px 15px #a896b8;
-        }
-
-        h1:hover {
-            opacity: 0.5;
-            cursor: pointer;
-        }
-
-        .gradient-text {
-            font-family: sans-serif;
-            font-size: 35px;
-            background: linear-gradient(45deg, #35012f 33%, #6b0981 66%, #ce02bd);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: #52044d;
-            margin: 20px auto;
-        }
-
-
-        h2 {
-            color: #2f0634;
-        }
-
-        h2:hover {
-            opacity: 0.7;
-            cursor: pointer;
-        }
-
-        h3 {
-            font-style: initial;
-            color: dimgray;
-        }
-
-        a {
-            color: #045a04;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #800000;
-            text-decoration: underline;
-        }
-
-        .photo {
-            display: block;
-            margin: auto;
-            opacity: 0.5;
-            border-radius: 30px;
-            transition: 1s;
-            box-shadow: 0px 0px 50px #7b7a7a;
-        }
-
-        .first:hover {
-            transform: scale(2);
-            opacity: 1;
-            cursor: pointer;
-        }
-
-        .second:hover {
-            transform: scale(3);
-            opacity: 1;
-            cursor: pointer;
-        }
-
-        .back-to-top {
-            position: fixed;
-            bottom: 5%;
-            right: 3%;
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(130deg, #5e0c59 50%, #933c93 50%);
-            -webkit-background-size: 300%;
-            background-size: 300%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            font-size: 50px;
-            border-radius: 5px;
-            transition: .5s;
-            color: #8f1885;
-        }
-
-        .back-to-top:hover {
-            background-position: 100% 0;
-            color: #ce02bd;
-            text-decoration: none;
-        }
-
-        .block {
-            display: block;
-            color: darkslategrey;
-            margin: 10px;
-            padding: 10px;
-            width: max-content;
-        }
-
-        .inline {
-            display: inline-block;
-            color: darkgreen;
-            margin: 10px;
-            padding: 10px;
-        }
-
-        .purple {
-            background-color: #fb9bfb;
-            border: 2px solid black;
-        }
-
-        .blue {
-            background-color: aqua;
-            border: 2px solid red;
-        }
-
-        .gold {
-            background-color: gold;
-            border: 2px solid green;
-        }
-
-        .invisible {
-            display: none;
-        }
-
-        .flex-container {
-            display: flex;
-            font-size: 20px;
-            flex-wrap: wrap;
-            width: 160px;
-            border: 1px solid darkslateblue;
-        }
-
-        .item {
-            border: 1px solid rgb(113, 205, 74);
-            padding: 20px;
-        }
-
-        .item1 {
-            width: 130px;
-            height: 130px;
-            border: 2px solid darkslateblue;
-            margin: 10px;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .relative {
-            position: relative;
-            top: -20px;
-            left: 30px;
-        }
-
-        .absolute {
-            position: absolute;
-            top: 50px;
-            left: 50px;
-        }
-
-        .textcols {
-            white-space: nowrap;
-        }
-
-        .textcols-item {
-            white-space: normal;
-            display: inline-block;
-            width: 48%;
-            vertical-align: top;
-            position: relative;
-        }
-    </style>
 </head>
 
 <body>
@@ -450,7 +258,16 @@
                 </div>
                 </div>
             </li>
-            <li></li>
+            <li><strong>Порядки перекрытия блоков</strong><br>
+                <div class="parent">
+                    Родитель
+                    <div class="box block-1">Блок 1</div>
+                    <div class="box block-2">Блок 2</div>
+                    <div class="box block-3">Блок 3</div>
+                    <div class="box block-4">Блок 4</div>
+                    <div class="box block-5">Блок 5</div>
+                </div>
+            </li>
         </ol>
 </body>
 
