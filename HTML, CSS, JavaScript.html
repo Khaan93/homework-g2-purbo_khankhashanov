@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML, CSS, JavaScript</title>
+    <style>
+        html {
+            background-color: darkseagreen;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 10px;
+            font-family: 'Open sans', sans-serif;
+            background-color: bisque;
+        }
+
+        .item-image {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            height: 250px;
+        }
+
+        .item-title {
+            font-size: 25px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .item-sub {
+            margin: 20px;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        .link-box {
+            text-align: center;
+        }
+
+        .box-1 {
+            margin-top: 38px;
+        }
+
+        .box-2 {
+            margin-top: 20px;
+        }
+
+        .box-3 {
+            margin-top: 57px;
+        }
+
+        .link {
+            background-color: darkslategray;
+            padding: 15px 50px;
+            text-decoration: none;
+            color: lightgrey;
+            border-radius: 10px;
+        }
+
+        .link-box:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <img class="item-image"
+                src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg">
+            <div class=item-title>Основы HTML</div>
+            <div class="item-sub">HTML (Hypertext Markup Language) - это код, который используется для структурирования
+                и отображения веб-страницы и её контента. Например, контент может быть структурирован внутри множества
+                параграфов, маркированных списков или с использованием изображений и таблиц данных. Как видно из
+                названия, эта статья даст вам базовое понимание HTML и его функций.</div>
+            <div class="link-box box-1"><a class="link"
+                    href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics"
+                    target="_blank">
+                    Перейти</a></div>
+        </div>
+        <div class="item">
+            <img class="item-image"
+                src="https://gbcdn.mrgcdn.ru/uploads/geekbrains/public/ckeditor_assets/pictures/8975/retina-5df8bc110901350173f8be719ce2ea1d.png">
+            <div class=item-title>Основы CSS</div>
+            <div class="item-sub">CSS (Cascading Style Sheets) — это код, который вы используете для стилизации
+                вашей
+                веб-страницы. Основы CSS помогут вам понять, что вам нужно для начала работы. Мы ответим на такие
+                вопросы как: Как сделать мой текст черным или красным? Как сделать так, чтобы контент появлялся в
+                определённом месте на экране? Как украсить мою веб-страницу с помощью фоновых изображений и цветов?
+            </div>
+            <div class="link-box box-2"><a class="link"
+                    href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics"
+                    target="_blank">
+                    Перейти</a></div>
+        </div>
+        <div class="item">
+            <img class="item-image"
+                src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-javascript/sta-je-javascript.jpg">
+            <div class=item-title>Основы JavaScript</div>
+            <div class="item-sub">JavaScript – это язык программирования, который добавляет интерактивность на ваш
+                веб-сайт (например: игры, отклик при нажатии кнопок или при вводе данных в формы, динамические
+                стили,
+                анимация). Эта статья поможет вам начать работать с этим захватывающим языком и даст вам
+                представление о
+                том, на что он способен.</div>
+            <div class="link-box box-3"><a class="link"
+                    href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/JavaScript_basics"
+                    target="_blank">
+                    Перейти</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
