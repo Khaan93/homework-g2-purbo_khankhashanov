@@ -3,14 +3,15 @@ html {
 }
 
 body {
-    width: 100%;
-    max-width: 1150px;
+    width: 85%;
+    min-width: 450px;
+    max-width: 1440px;
     margin: 30px auto;
     background-color: rgb(253, 238, 255);
     padding: 30px;
     font-size: 17px;
     font-family: sans-serif;
-    border-radius: 30px;
+    border-radius: 15px;
     box-shadow: 0px 0px 80px #a896b8;
 }
 
@@ -20,7 +21,7 @@ h1 {
     margin: 20px;
     padding: 20px;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 15px;
     box-shadow: 0px 0px 15px #a896b8;
 }
 
@@ -33,6 +34,7 @@ h1:hover {
     font-family: sans-serif;
     font-size: 35px;
     background: linear-gradient(45deg, #35012f 33%, #6b0981 66%, #ce02bd);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #52044d;
@@ -87,8 +89,8 @@ a:hover {
 
 .back-to-top {
     position: fixed;
-    bottom: 3%;
-    right: 3%;
+    bottom: 2%;
+    right: 1%;
     width: 50px;
     height: 50px;
     background: linear-gradient(130deg, #5e0c59 50%, #933c93 50%);
@@ -199,6 +201,7 @@ a:hover {
     color: white;
     box-sizing: border-box;
     position: relative;
+    border-radius: 10px;
 
 }
 
