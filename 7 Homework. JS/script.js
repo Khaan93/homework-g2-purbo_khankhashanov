@@ -16,7 +16,7 @@ age = today.getFullYear() - Birthday.getFullYear();
 let ProfessionYears;
 ProfessionYears = ((today.getFullYear() - StartWorking.getFullYear()) + (FinishStuding.getFullYear() - StartStuding.getFullYear()));
 
-let AboutMe = `Всем привет! Меня зовут ${Name + " " + Surname}. Мне ${age} лет. Я родился и вырос в городе ${City}. По професии я ${Profession}. 
+let AboutMe = `Всем привет! Меня зовут ${Name + " " + Surname}. Мне ${age} лет. Я родился и вырос в городе ${City}. По профессии я ${Profession}. 
 Своей професcии я посвятил ${ProfessionYears} лет и наконец решил изменить свою жизнь и начать осваивать новую нишу под наставничеством нашего учителя, которого зовут ${TeacherName}.`
 
 console.log(AboutMe);
