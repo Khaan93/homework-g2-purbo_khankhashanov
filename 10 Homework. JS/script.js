@@ -4,11 +4,10 @@ for (let i = 0; i <= 10; i += 2) {
 }
 
 //Создадим бесконечный цикл и прервем на 5ой итерации.
-let count = 0;
-while (count < 10) //создает бесконечный цикл 
-{
+let count = 1;
+while (true) {//Условие всегда истинно
     console.log(count);
-    if (count == 5) {
+    if (count === 5) {
         break; //прерываем цикл на 5
     }
     count++;
@@ -16,60 +15,46 @@ while (count < 10) //создает бесконечный цикл
 
 //Создадим массив блюд, с названием, ингредиентами, ценой приготовления и ценой реализации. (прямо как в уроке номер 8)
 
+let ingredientsPrice = {
+    potato: 40,
+    beef: 70,
+    cabbage: 10,
+    pork: 100,
+    dough: 10,
+    chiken: 50,
+    onion: 5,
+    tomato: 15,
+}
+
 let cabbageSoup = {
     name: 'Щи',
     ingredients: ['potato', 'beef', 'cabbage'],
+    price: 240,
 }
 
 let shashlik = {
     name: 'Шашлык',
     ingredients: ['pork', 'onion'],
+    price: 330,
 }
 let chickenburger = {
     name: 'Чикенбургер',
     ingredients: ['dough', 'chiken', 'onion', 'tomato'],
+    price: 240,
 }
 
-let price = {
-    cabbageSoup: 240,
-    shashlik: 330,
-    chickenburger: 240,
+let food = [cabbageSoup, shashlik, chickenburger];
+let text = "";
+for (let i = 0; i < food.length; i++) {
+    let costPrice = 0;
+    let profit = 0;
+    for (let number = 0; number < food[i].ingredients.length; number++) {
+        let name = food[i].ingredients[number];
+        costPrice += ingredientsPrice[name];
+        console.log(costPrice);
+    }
+    profit = '"' + food[i].name + '" - ' + (food[i].price - costPrice) + ' рублей. ';
+    text += profit
 }
 
-let ingredients = ['potato', 'beef', 'cabbage', 'pork', 'dough', 'chiken', 'onion', 'tomato'];
-ingredients[0] = 40;
-ingredients[1] = 70;
-ingredients[2] = 10;
-ingredients[3] = 100;
-ingredients[4] = 10;
-ingredients[5] = 50;
-ingredients[6] = 5;
-ingredients[7] = 15;
-
-let food = ['cabbageSoup', 'shashlik', 'chickenburger'];
-
-//Профит для Щи
-let cabbageSoupPrice = 0;
-for (let i = 0; i < cabbageSoup.ingredients.length; i++) {
-    cabbageSoupPrice += ingredients[i];
-}
-let cabbageSoupProfit = price.cabbageSoup - cabbageSoupPrice;
-alert(`Прибыль с порции "Щи" составит ${cabbageSoupProfit} рублей`);
-
-//Профит для шашлыка
-let shashlikPrice = 0;
-for (let i = 0; i < shashlik.ingredients.length; i++) {
-    shashlikPrice += ingredients[i];
-}
-let shashlikProfit = price.shashlik - shashlikPrice;
-alert(`Прибыль с порции "Шашлыка" составит ${shashlikProfit} рублей`);
-
-//Профит для чикенбургера
-let chikenburgerPrice = 0;
-for (let i = 0; i < chickenburger.ingredients.length; i++) {
-    chikenburgerPrice += ingredients[i];
-    console.log(chikenburgerPrice);
-}
-let chikenburgerProfit = price.chickenburger - chikenburgerPrice;
-alert(`Прибыль с порции "Чикенбургера" составит ${chikenburgerProfit} рублей`);
-
+alert('Профит для блюда ' + text);
