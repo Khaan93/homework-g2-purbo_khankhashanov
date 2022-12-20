@@ -1,7 +1,7 @@
 //Выводим все четные числа до 10 включительно.
 for (let i = 0; i <= 10; i += 2) {
     console.log(i);
-}
+};
 
 //Создадим бесконечный цикл и прервем на 5ой итерации.
 let count = 1;
@@ -11,50 +11,66 @@ while (true) {//Условие всегда истинно
         break; //прерываем цикл на 5
     }
     count++;
-}
+};
 
 //Создадим массив блюд, с названием, ингредиентами, ценой приготовления и ценой реализации. (прямо как в уроке номер 8)
 
-let ingredientsPrice = {
-    potato: 40,
-    beef: 70,
-    cabbage: 10,
-    pork: 100,
-    dough: 10,
-    chiken: 50,
-    onion: 5,
-    tomato: 15,
-}
-
 let cabbageSoup = {
     name: 'Щи',
-    ingredients: ['potato', 'beef', 'cabbage'],
+    ingredients: [
+        { name: 'potato', weight: 100 },
+        { name: 'beef', weight: 100 },
+        { name: 'cabbage', weight: 100 }
+    ],
     price: 240,
-}
+};
 
 let shashlik = {
     name: 'Шашлык',
-    ingredients: ['pork', 'onion'],
+    ingredients: [
+        { name: 'pork', weight: 200 },
+        { name: 'onion', weight: 30 },
+    ],
     price: 330,
-}
+};
+
 let chickenburger = {
     name: 'Чикенбургер',
-    ingredients: ['dough', 'chiken', 'onion', 'tomato'],
+    ingredients: [
+        { name: 'dough', weight: 300 },
+        { name: 'chiken', weight: 150 },
+        { name: 'onion', weight: 20 },
+        { name: 'tomato', weight: 30 },
+    ],
     price: 240,
-}
+};
 
-let food = [cabbageSoup, shashlik, chickenburger];
-let text = "";
-for (let i = 0; i < food.length; i++) {
-    let costPrice = 0;
-    let profit = 0;
-    for (let number = 0; number < food[i].ingredients.length; number++) {
-        let name = food[i].ingredients[number];
-        costPrice += ingredientsPrice[name];
-        console.log(costPrice);
+let menu = [cabbageSoup, shashlik, chickenburger];
+
+// Цена за 100 гр
+let ingredientsPrice = {
+    potato: 40,
+    beef: 60,
+    cabbage: 10,
+    pork: 50,
+    dough: 10,
+    chiken: 40,
+    onion: 5,
+    tomato: 15,
+};
+
+let profit = 0;
+for (let i = 0; i < menu.length; i++) {
+    let cost = 0;
+    const ingredients = menu[i].ingredients;
+
+    for (let j = 0; j < ingredients.length; j++) {
+        let ingredient = ingredients[j];
+        let ingredientPrice =
+            (ingredientsPrice[ingredient.name] * ingredient.weight) / 100;
+        cost += ingredientPrice;
     }
-    profit = '"' + food[i].name + '" - ' + (food[i].price - costPrice) + ' рублей. ';
-    text += profit
-}
+    menu[i].cost = cost;
+    alert(JSON.stringify(menu[i]))
+};
 
-alert('Профит для блюда ' + text);
