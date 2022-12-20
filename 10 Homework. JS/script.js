@@ -72,6 +72,7 @@ for (let i = 0; i < menu.length; i++) {
     }
     menu[i].cost = cost;
     profit = menu[i].price - menu[i].cost;
+    console.log(profit)
     alert(JSON.stringify(menu[i]))
 };
 
