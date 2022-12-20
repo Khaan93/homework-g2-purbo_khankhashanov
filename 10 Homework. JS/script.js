@@ -71,6 +71,7 @@ for (let i = 0; i < menu.length; i++) {
         cost += ingredientPrice;
     }
     menu[i].cost = cost;
+    profit = menu[i].price - menu[i].cost;
     alert(JSON.stringify(menu[i]))
 };
 
