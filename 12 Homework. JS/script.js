@@ -67,6 +67,7 @@ for (let i = 0; i < menu.length; i++) {
     alert(JSON.stringify(menu[i]))
 };
 
+//Посчитаем профит с помощью функции
 function calcProfit(ingredients, costs, price) {
     let cost = 0;
     for (let j = 0; j < ingredients.length; j++) {
