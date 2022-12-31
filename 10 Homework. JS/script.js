@@ -73,6 +73,8 @@ for (let i = 0; i < menu.length; i++) {
     menu[i].cost = cost;
     profit = menu[i].price - menu[i].cost;
     console.log(profit)
-    alert(JSON.stringify(menu[i]))
+    alert(`Цена блюда "${menu[i].name}" - ${menu[i].price}
+Стоимость приготовления "${menu[i].name}" - ${menu[i].cost}
+Профит от продажи "${menu[i].name}" составляет ${profit} рублей.`)
 };
 
