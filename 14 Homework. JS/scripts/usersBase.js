@@ -4,4 +4,5 @@ let users = {
     Anna: '2',
 }
 
+// Экспорт по умолчанию
 export default users;
