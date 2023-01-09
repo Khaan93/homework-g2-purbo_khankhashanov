@@ -5,7 +5,7 @@ let users = {
 }
 
 let user = prompt('Введите имя пользователя', '');
-if (user == 'Purbo' || user == 'Arsalan' || user == 'Anna') {
+if (users[user] !== undefined) {
     let password = prompt('Введите пароль', '');
     if (password == users[user]) {
         alert(`Добро пожаловать, ${user}!`);
