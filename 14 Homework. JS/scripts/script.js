@@ -1,5 +1,5 @@
-// Импорт переменной users из файла users.js
-import users from "./usersBase";
+// Импорт переменной users из файла usersBase.js
+import users from "./usersBase.js";
 
 let user = prompt('Введите имя пользователя', '');
 if (users[user] !== undefined) {
