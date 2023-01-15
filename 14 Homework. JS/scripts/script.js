@@ -1,5 +1,5 @@
 // Импорт переменной users из файла users.js
-import users from "./greetings.js";
+import users from "./usersBase";
 
 let user = prompt('Введите имя пользователя', '');
 if (users[user] !== undefined) {
