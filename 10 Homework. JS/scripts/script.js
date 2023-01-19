@@ -1,3 +1,5 @@
+import menu from "./menu.json" assert {type: 'json'};
+
 //Выводим все четные числа до 10 включительно.
 for (let i = 0; i <= 10; i += 2) {
     console.log(i);
@@ -10,42 +12,9 @@ while (true) {//Условие всегда истинно
     if (count === 5) {
         break; //прерываем цикл на 5
     }
-    count++;
+    count++
 };
 
-//Создадим массив блюд, с названием, ингредиентами, ценой приготовления и ценой реализации. (прямо как в уроке номер 8)
-
-let cabbageSoup = {
-    name: 'Щи',
-    ingredients: [
-        { name: 'potato', weight: 100 },
-        { name: 'beef', weight: 100 },
-        { name: 'cabbage', weight: 100 }
-    ],
-    price: 240,
-};
-
-let shashlik = {
-    name: 'Шашлык',
-    ingredients: [
-        { name: 'pork', weight: 200 },
-        { name: 'onion', weight: 30 },
-    ],
-    price: 330,
-};
-
-let chickenburger = {
-    name: 'Чикенбургер',
-    ingredients: [
-        { name: 'dough', weight: 300 },
-        { name: 'chiken', weight: 150 },
-        { name: 'onion', weight: 20 },
-        { name: 'tomato', weight: 30 },
-    ],
-    price: 240,
-};
-
-let menu = [cabbageSoup, shashlik, chickenburger];
 
 // Цена за 100 гр
 let ingredientsPrice = {
