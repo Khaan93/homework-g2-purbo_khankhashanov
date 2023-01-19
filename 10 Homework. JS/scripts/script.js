@@ -31,10 +31,9 @@ let ingredientsPrice = {
 let profit = 0;
 for (let i = 0; i < menu.length; i++) {
     let cost = 0;
-    let ingredients = menu[i].ingredients;
 
-    for (let j = 0; j < ingredients.length; j++) {
-        let ingredient = ingredients[j];
+    for (let j = 0; j < menu[i].ingredients.length; j++) {
+        let ingredient = menu[i].ingredients[j];
         let ingredientPrice =
             (ingredientsPrice[ingredient.name] * ingredient.weight) / 100;
         cost += ingredientPrice;
