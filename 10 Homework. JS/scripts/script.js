@@ -31,7 +31,7 @@ let ingredientsPrice = {
 let profit = 0;
 for (let i = 0; i < menu.length; i++) {
     let cost = 0;
-    const ingredients = menu[i].ingredients;
+    let ingredients = menu[i].ingredients;
 
     for (let j = 0; j < ingredients.length; j++) {
         let ingredient = ingredients[j];
