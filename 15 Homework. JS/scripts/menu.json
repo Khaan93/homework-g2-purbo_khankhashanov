@@ -1,0 +1,62 @@
+[
+    {
+        "cabbageSoup": {
+            "name": "Щи",
+            "ingredients": [
+                {
+                    "name": "potato",
+                    "weight": 100
+                },
+                {
+                    "name": "beef",
+                    "weight": 100
+                },
+                {
+                    "name": "cabbage",
+                    "weight": 100
+                }
+            ],
+            "price": 240
+        }
+    },
+    {
+        "shashlik": {
+            "name": "Шашлык",
+            "ingredients": [
+                {
+                    "name": "pork",
+                    "weight": 200
+                },
+                {
+                    "name": "onion",
+                    "weight": 30
+                }
+            ],
+            "price": 330
+        }
+    },
+    {
+        "chickenburger": {
+            "name": "Чикенбургер",
+            "ingredients": [
+                {
+                    "name": "dough",
+                    "weight": 300
+                },
+                {
+                    "name": "chiken",
+                    "weight": 150
+                },
+                {
+                    "name": "onion",
+                    "weight": 20
+                },
+                {
+                    "name": "tomato",
+                    "weight": 30
+                }
+            ],
+            "price": 240
+        }
+    }
+]
