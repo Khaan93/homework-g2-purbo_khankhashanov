@@ -14,12 +14,12 @@ import ingredientsPrice from "./ingredientsPrice.json" assert {type: 'json'};
 //     },
 //     {
 //         name: "Чикенбургер",
-//         ingredients: ["dough", "chicken", "onion", "tomato",],
+//         ingredients: ["dough", "chicken", "onion", "tomato"],
 //         price: 240
 //     },
 //     {
 //         name: "Простой салат",
-//         ingredients: ["cabbage", "onion", "tomato",],
+//         ingredients: ["cabbage", "onion", "tomato"],
 //         price: 60
 //     }
 // ]
