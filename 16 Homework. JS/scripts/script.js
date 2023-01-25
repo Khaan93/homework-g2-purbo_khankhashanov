@@ -5,36 +5,37 @@
 
 
 
+let menu = fetch("scripts/menu.json")
+    .then((response) => response.json())
+    .then((data) => {
+        menu = data;
+        console.log(menu)
+    })
+    .then((ingr) => {
+        ingredientsPrice = ingr;
+        console.log(ingredientsPrice)
+    })
+    .then((costs) => {
+        costName = costs;
+        console.log(costName)
+    });
 
-// let ingPrice = fetch("scripts/ingredientsPrice.json")
-//     .then((response) => response.json())
-//     .then((ingredientsPrice) => console.log(ingredientsPrice))
+let ingredientsPrice = fetch("scripts/ingredientsPrice.json")
+    .then((response) => response.json())
+    .then((price) => {
+        ingredientsPrice = price;
+        console.log(ingredientsPrice)
+    })
 
 let costName = (costs) => {
     menu.forEach((dish) => {
         let cost = dish.ingredients.reduce((sum, item) => {
             return sum + ingredientsPrice[item]
         }, 0)
+        cost = costs;
+        console.log(cost)
     });
 }
-
-
-fetch("scripts/menu.json")
-    //Promise (обещание)
-    .then((response) => response.json())
-    .then((menu) => console.log('menu:', menu))
-    .then((ingPrice) => {
-        fetch("scripts/ingredientsPrice.json")
-            .then((response) => response.json())
-            .then((ingredientsPrice) => console.log(ingredientsPrice))
-    })
-    .then((costs) => console.log(costName))
-
-
-
-
-
-
 
 
 
