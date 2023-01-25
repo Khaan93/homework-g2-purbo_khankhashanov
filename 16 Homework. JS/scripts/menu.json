@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Щи",
+        "ingredients": [
+            "potato",
+            "beef",
+            "cabbage"
+        ],
+        "price": 240
+    },
+    {
+        "name": "Шашлык",
+        "ingredients": [
+            "pork",
+            "onion"
+        ],
+        "price": 330
+    },
+    {
+        "name": "Чикенбургер",
+        "ingredients": [
+            "dough",
+            "chicken",
+            "onion",
+            "tomato"
+        ],
+        "price": 240
+    },
+    {
+        "name": "Простой салат",
+        "ingredients": [
+            "cabbage",
+            "onion",
+            "tomato"
+        ],
+        "price": 60
+    }
+]
