@@ -32,7 +32,6 @@ let costName = (costs) => {
         let cost = dish.ingredients.reduce((sum, item) => {
             return sum + ingredientsPrice[item]
         }, 0)
-        cost = costs;
         console.log(cost)
     });
 }
