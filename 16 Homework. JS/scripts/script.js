@@ -25,14 +25,14 @@ let menu = fetch("scripts/menu.json")
     .then((response) => response.json())
     .then((data) => {
         menu = data;
-        console.log(menu)
+        console.log(menu)//Массив с блюдами
     })
     .then((costs) => {
         fetch("scripts/ingredientsPrice.json")
             .then((response) => response.json())
             .then((price) => {
                 ingredientsPrice = price;
-                console.log(ingredientsPrice)
+                console.log(ingredientsPrice)//Объект с ингредиентами
             })
             .then((costName) => {
                 menu.forEach((dish) => {
