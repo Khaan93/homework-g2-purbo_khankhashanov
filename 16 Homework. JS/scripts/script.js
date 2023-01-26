@@ -1,9 +1,25 @@
-// setTimeout(() => {
-//     console.log("start");
-// }, 5000);
+setTimeout(() => {
+    console.log("start");
+}, 5000);
 
 
 
+
+// let ingredientsPrice = fetch("scripts/ingredientsPrice.json")
+//     .then((response) => response.json())
+//     .then((price) => {
+//         ingredientsPrice = price;
+//         console.log(ingredientsPrice)
+//     })
+
+// let costName = (costs) => {
+//     menu.forEach((dish) => {
+//         let cost = dish.ingredients.reduce((sum, item) => {
+//             return sum + ingredientsPrice[item]
+//         }, 0)
+//         console.log(cost)
+//     });
+// }
 
 let menu = fetch("scripts/menu.json")
     .then((response) => response.json())
@@ -11,30 +27,24 @@ let menu = fetch("scripts/menu.json")
         menu = data;
         console.log(menu)
     })
-    .then((ingr) => {
-        ingredientsPrice = ingr;
-        console.log(ingredientsPrice)
-    })
     .then((costs) => {
-        costName = costs;
-        console.log(costName)
-    });
-
-let ingredientsPrice = fetch("scripts/ingredientsPrice.json")
-    .then((response) => response.json())
-    .then((price) => {
-        ingredientsPrice = price;
-        console.log(ingredientsPrice)
+        fetch("scripts/ingredientsPrice.json")
+            .then((response) => response.json())
+            .then((price) => {
+                ingredientsPrice = price;
+                console.log(ingredientsPrice)
+            })
+            .then((costName) => {
+                menu.forEach((dish) => {
+                    let cost = dish.ingredients.reduce((sum, item) => {
+                        return sum + ingredientsPrice[item]
+                    }, 0)
+                    costName = cost;
+                    console.log(`Себестоимость блюда "${dish.name}" составляет - ${cost} рублей`)
+                });
+            })
     })
 
-let costName = (costs) => {
-    menu.forEach((dish) => {
-        let cost = dish.ingredients.reduce((sum, item) => {
-            return sum + ingredientsPrice[item]
-        }, 0)
-        console.log(cost)
-    });
-}
 
 
 
