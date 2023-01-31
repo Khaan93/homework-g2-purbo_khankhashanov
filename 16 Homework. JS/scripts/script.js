@@ -25,24 +25,41 @@ let menu = fetch("scripts/menu.json")
     .then((response) => response.json())
     .then((data) => {
         menu = data;
+        console.log(`Добавим меню с блюдами с помощью fetch:`)
         console.log(menu)//Массив с блюдами
     })
-    .then((costs) => {
-        fetch("scripts/ingredientsPrice.json")
+    .then((price) => {
+        return fetch("scripts/ingredientsPrice.json")
             .then((response) => response.json())
             .then((price) => {
                 ingredientsPrice = price;
+                console.log(`Добавим объект с ценами на ингредиенты с помощью fetch:`)
                 console.log(ingredientsPrice)//Объект с ингредиентами
-            })
-            .then((costName) => {
-                menu.forEach((dish) => {
-                    let cost = dish.ingredients.reduce((sum, item) => {
-                        return sum + ingredientsPrice[item]
-                    }, 0)
-                    costName = cost;
-                    console.log(`Себестоимость блюда "${dish.name}" составляет - ${cost} рублей`)
-                });
-            })
+            });
+
+    })
+    .then((costs) => {
+        console.log("Перепишите цикл, который считает себестоимость блюда из прошлых заданий на функцию, которая использует reduce:")
+        menu.forEach((dish) => {
+            let cost = dish.ingredients.reduce((sum, item) => {
+                return sum + ingredientsPrice[item]
+            }, 0)
+            costs = cost;
+            console.log(`Себестоимость блюда "${dish.name}" составляет - ${cost} рублей`)
+        });
+    })
+    .then((costName) => {
+        let costSum = menu.map((menuItem) => {
+            let costPrice = menuItem.ingredients.reduce((sum, item) => {
+                return sum + ingredientsPrice[item]
+            }, 0)
+            let menuWithCost = Object.assign({}, menuItem); // Копируем объекты и добавляем в них cost, основные объекты остаются без cost
+            menuWithCost.cost = costPrice
+            return menuWithCost
+            costName = costSum;
+        });
+        console.log("Запишите в каждое блюдо себестоимость, используя map и функцию из первого задания:")
+        console.log(costSum)
     })
 
 
