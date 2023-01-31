@@ -43,6 +43,7 @@ menu.forEach((dish) => {
     console.log(`Себестоимость блюда "${dish.name}" составляет - ${cost} рублей`)
 });
 
+
 console.log("Задание 2. Запишите в каждое блюдо себестоимость, используя map и функцию из первого задания.")
 let costSum = menu.map((menuItem) => {
     let costPrice = menuItem.ingredients.reduce((sum, item) => {
